@@ -1,0 +1,27 @@
+# Build outputs
+publish/
+publish_temp/
+publish_output/
+bin/
+obj/
+dist_temp/
+*.zip
+
+# Data and logs
+data/
+logs/
+
+# IDE
+.vs/
+.vscode/
+*.suo
+*.user
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temp
+*.tmp
+temp_models/
+publish_temp_clean.cs
