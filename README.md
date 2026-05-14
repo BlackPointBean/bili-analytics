@@ -1,0 +1,39 @@
+# BiliAnalytics — B站视频数据监控
+
+本地运行的 B站视频数据监控系统。添加 BV 号后自动采集播放/点赞/投币/收藏等数据，浏览器仪表盘实时查看趋势。
+
+## 快速开始
+
+1. 下载 [Releases](https://github.com/BlackPointBean/bili-analytics/releases) 中的 `BiliAnalytics.zip`
+2. 解压，右键 `Setup.exe` → **以管理员身份运行**
+3. 打开 `C:\Program Files\BiliAnalytics\` → 双击 `启动面板.cmd`
+4. 浏览器自动打开仪表盘，输入 BV 号开始监控
+
+## 功能
+
+- 每分钟自动采集播放 / 点赞 / 投币 / 收藏 / 分享 / 弹幕 / 评论
+- 数据去重存储（数值不变则跳过写入）
+- ECharts 可视化：折线图、雷达图、柱状图、数据表格
+- 多视频对比（最多 5 个）
+- 后台静默运行，无窗口弹窗
+- 单文件自包含 exe，无需 .NET 运行时
+
+## 系统要求
+
+- Windows 10/11 x64
+- 安装目录需要管理员权限
+- 浏览器（Chrome/Edge/Firefox）
+
+## 技术栈
+
+| 层 | 技术 |
+|----|------|
+| 后台服务 | C# (.NET 8) + Kestrel |
+| 数据存储 | EF Core + SQLite |
+| 前端面板 | ECharts 5 + HTML/JS |
+| 发布 | 单文件自包含 exe |
+
+## 声明
+
+- 本工具仅供学习研究使用
+- 请勿添加过多视频（建议 ≤ 5 个），频繁请求 B站 API 可能导致 IP 被封
