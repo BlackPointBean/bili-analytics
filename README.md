@@ -4,8 +4,8 @@
 
 ## 快速开始
 
-1. 下载 [Releases](https://github.com/BlackPointBean/bili-analytics/releases) 中的 `BiliAnalytics.zip`
-2. 解压，右键 `Setup.exe` → **以管理员身份运行**
+1. 下载文件
+2. 右键 `Setup.exe` → **以管理员身份运行**
 3. 打开 `C:\Program Files\BiliAnalytics\` → 双击 `启动面板.cmd`
 4. 浏览器自动打开仪表盘，输入 BV 号开始监控
 
